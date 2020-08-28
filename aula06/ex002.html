@@ -18,12 +18,13 @@
 </head>
 <body>
     <h1>Olá Mundo!</h1>
-    <p>Me livrando da maldição do olá mundo!</p>
+    <p>Já me livrei da maldição!</p>
 
     <script>
-        window.alert('Curso de JavaScript'); //alerta
-        window.confirm('Quer mesmo fazer javascript?'); //confirmar dados
-        window.prompt('Qual o seu nome?'); //o usuario interage digitando
+        var nome = window.prompt('Qual é o seu nome?');
+        window.alert('É um grande prazer te conhecer, ' + nome + '!'); // + concatenação 
+        window.confirm('aula de javascript com ' + nome)
+
     </script>
 
 </body>
