@@ -19,6 +19,11 @@
         document.write(`Seu nome em maiusculas é ${nome.toUpperCase()} <br>`)
         document.write(`Seu nome em minusculo é ${nome.toLowerCase()} <br>`)
 
+    
+       var cash = Number(window.prompt('Valor: '))
+      document.write(`O valor digitado foi ${cash} <br>`)
+      document.write(`Seu nome é ${nome} e valor digitado foi ${cash}`)
+      cash.toLocaleString(`pt-BR`, {style: `currency`, currency: `BRL`})
 
     //s.length = tamanho da string
     //s.toUpperCase() = tudo maiusculos
