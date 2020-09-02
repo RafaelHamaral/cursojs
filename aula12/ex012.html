@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Horas</title>
+</head>
+<body>
+    <h1>Horario</h1>
+    Que horas são?: <input type="number" name="hora" id="hora">
+    <input type="button" value="ver" onclick="hora()">
+    <div id="horario"></div>
+
+    <script>
+        function hora(){
+            var h = window.document.querySelector('input#hora')
+            var horario = window.document.querySelector('div#horario')
+            var hora = Number(h.value)
+
+            horario.innerHTML = `<p>Agora são ${hora} horas </p>`
+
+            if(hora >= 1 && hora <= 4){
+                horario.innerHTML += `<p>Boa Madrugada</p>`
+            }else if (hora < 12){
+                horario.innerHTML += `<p>Bom dia</p>`
+            }else if (hora < 18){
+                horario.innerHTML += `<p>Boa Tarde</p>`
+            }else {
+                horario.innerHTML += `<p>Boa Noite</p>`
+            }
+
+        }
+
+    </script>
+
+
+</body>
+</html>
