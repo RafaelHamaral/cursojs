@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dias da Semana</h1>
+    Que dia da semana é hoje: <input type="number" name="dia" id="dia">
+    <input type="submit" value="Ver" onclick="ver()">
+    <div id="res"></div>
+</body>
+    <script>
+        function ver() {
+            var d = window.document.querySelector('input#dia')
+            var t = window.document.querySelector('div#res')
+            var dia = Number(d.value)
+        
+
+
+        switch (dia) {
+
+            case 0: 
+                res.innerHTML = `<p>Domingo</d>`
+                break
+            
+
+            case 1: 
+                res.innerHTML = `<p>Segunda</d>`
+                break
+            
+
+            case 2: 
+                res.innerHTML = `<p>Terça</d>`
+                break
+            
+
+            case 3: 
+                res.innerHTML = `<p>Quarta</d>`
+                break
+            
+
+            case 4: 
+                res.innerHTML = `<p>Quinta</d>`
+                break
+            
+            
+            case 5: 
+                res.innerHTML = `<p>Sexta</d>`
+                break
+            
+
+            case 6: 
+                 res.innerHTML = `<p>Sábado</d>`
+                break
+            
+
+            default: 
+                res.innerHTML = `<p>[ERRO] Dia da semana invalido</p> 
+                                <p>Domingo? Digite <strong>0</strong></p>`
+                break
+                
+            }
+
+        }
+
+
+    </script>
+</html>

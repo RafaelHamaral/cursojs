@@ -17,18 +17,17 @@
             var res = window.document.querySelector('div#res')
             var paiss = p.value
         
-            res.innerHTML = `<p>Seu País de origem é <strong>${p}</strong></p>`
+            res.innerHTML = `<p>Seu País de origem é <strong>${paiss}</strong></p>`
 
-            if (p != Brasil) {
+            if (paiss != Brasil) {
 
                 res.innerHTML += `<p>Você é <strong>estrangeiro</strong></p>`
 
             }else {
               
             res.innerHTML += `<p>Você é <strong>brasileiro</strong></p>`
-            }
-            
         }
+    }
     </script>
 </body>
 </html>
