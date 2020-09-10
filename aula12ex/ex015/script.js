@@ -1,3 +1,6 @@
+//criando imagens dinamicamente pelo javascript:
+
+
 function verificar() {
     //window.alert('funcionou')
     var data = new Date()
@@ -12,7 +15,7 @@ function verificar() {
         var idade = ano - Number(fano.value)
         //res.innerHTML = `Idade Calculada: ${idade}`
         var genero = ''
-        var img = document.createElement('img')
+        var img = document.createElement('img')//cria um elemento como se fosse html
         img.setAttribute('id', 'foto')
 
         if (fsex[0].checked) {
@@ -58,9 +61,9 @@ function verificar() {
             }
 
         }
-        res.style.textAlign = 'center'
+        res.style.textAlign = 'center' //alinhando o texto ("css" via javascript)
         res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
-        res.appendChild(img)
+        res.appendChild(img)//inserir imagem criada acima no (img.setAttribute)
     }
 
 }
