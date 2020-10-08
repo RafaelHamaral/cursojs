@@ -1,6 +1,6 @@
 function contar() {
 
-    //criando as variaveis que vou chamar na funcao - o id vem de modelo.html 
+    //criando as variaveis que vou chamar na funcao - os ids vem de modelo.html 
     let ini = document.getElementById('txti')
     let fim = document.getElementById('txtf')
     let passo = document.getElementById('txtp')
