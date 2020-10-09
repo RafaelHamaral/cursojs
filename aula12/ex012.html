@@ -5,29 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Horas</title>
+    <style>
+        p {
+          font-size: 20pt;      
+          color: black;
+        }
+        
+        #hora {
+            font-size:20pt;
+        }
+    </style>
 </head>
 <body>
-    <h1>Horario</h1>
-    Que horas são?: <input type="number" name="hora" id="hora">
-    <input type="button" value="ver" onclick="hora()">
+    <h1>Que horas são?</h1>
+   <!-- Que horas são?:<input type="number" name="hora" id="hora">-->
+    <input type="button" value="Ver Hora" onclick="hora()">
     <div id="horario"></div>
 
     <script>
         function hora(){
             var h = window.document.querySelector('input#hora')
             var horario = window.document.querySelector('div#horario')
-            var hora = Number(h.value)
+            var hora = new Date  
 
-            horario.innerHTML = `<p>Agora são ${hora} horas </p>`
+            horario.innerHTML = `<p>Agora são <strong>${hora.getHours()} horas e ` + `${hora.getMinutes()}</strong> minutos </p>`
 
             if(hora >= 1 && hora <= 4){
-                horario.innerHTML += `<p>Boa Madrugada</p>`
+                horario.innerHTML += `<p><strong>Boa Madrugada</strong></p>`
             }else if (hora < 12){
-                horario.innerHTML += `<p>Bom dia</p>`
+                horario.innerHTML += `<p><strong>Bom dia</strong></p>`
             }else if (hora < 18){
-                horario.innerHTML += `<p>Boa Tarde</p>`
+                horario.innerHTML += `<p><strong>Boa Tarde</strong></p>`
             }else {
-                horario.innerHTML += `<p>Boa Noite</p>`
+                horario.innerHTML += `<p><strong>Boa Noite</strong></p>`
             }
 
         }

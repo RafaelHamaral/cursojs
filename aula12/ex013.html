@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        p {
+            font-size: 20pt;
+        }
+    </style>
 </head>
 <body>
     <h1>Dias da Semana</h1>
-    Que dia da semana é hoje: <input type="number" name="dia" id="dia">
+   <p> Que dia da semana é hoje?:</p> <input type="number" name="dia" id="dia">
     <input type="submit" value="Ver" onclick="ver()">
     <div id="res"></div>
 </body>
@@ -16,6 +21,7 @@
             var d = window.document.querySelector('input#dia')
             var t = window.document.querySelector('div#res')
             var dia = Number(d.value)
+            //var dia = new Date
         
 
 
