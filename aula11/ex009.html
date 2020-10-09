@@ -16,7 +16,7 @@
             var p = window.document.querySelector('input#pais')//recebe o que contem no input
             var res = window.document.querySelector('div#res')//recebe o html
             var paiss = String(p.value)
-            
+
             res.innerHTML = `<p>Seu País de origem é <strong>${paiss}</strong></p>`
 
             if (paiss == 'Brasil') {
@@ -28,7 +28,6 @@
                 res.innerHTML += `<p>Fala português, mas não é natural do <strong>Brasil</strong></p>
 
                    <p>Você é <strong>estrangeiro</strong></p>`
-
 
             } else {
                     
