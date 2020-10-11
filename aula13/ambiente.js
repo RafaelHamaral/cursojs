@@ -15,6 +15,6 @@ while (c <= 6){
 
 var c = 1      
 do {
-    console.log(`passo ${c}`)  //crases habilita que eu possa fazer interpolação por placeholde ${c}
+    console.log(`passo ${c}`)  //crases habilita que eu possa fazer interpolação por placeholdes ${c}
     c++
 } while (c <= 10) 
