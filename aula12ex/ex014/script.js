@@ -9,7 +9,7 @@ msg.innerHTML = `Agora são ${hora} horas e `+`${minuto} minutos`
     if(hora >= 0 && hora < 12) {
         //BOM DIA!
         img.src = 'fotomanha.png'//busca a imagem da minha pasta
-        document.body.style.background = '#d5d1b6'//corde fundo
+        document.body.style.background = '#d5d1b6'//cor de fundo
      
     } else if (hora >= 12 && hora < 18){
         //BOA TARDE!
