@@ -8,7 +8,7 @@ function contar() {
 
 
     //verificar se os dados estao faltando
-    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {//length - quantas letras tem dentro
         res.innerHTML = 'Impossivel Contar!'
        // window.alert('[ERRO] Faltam dados!')
     
