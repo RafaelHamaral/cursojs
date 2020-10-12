@@ -12,7 +12,7 @@ function tabuada(){
     }else {
         let n = Number(numero.value) //simplifica a variavel numero e tranforma a variavel em numero
         let c = 1 
-        tab.innerHTML = '' //caso eu calcule outro numero ele limpa a tabuada anterior
+        tab.innerHTML = '' //caso eu calcule outro numero ele limpa a tabuada anterior, antes de mostrar a tabuada ele limpa o campo.
     
     //resolvendo com o while
        /* while (c <= 10){
@@ -26,9 +26,8 @@ function tabuada(){
             for(c == 1; c <= 10; c++){
                 let item = document.createElement('option')//criando um campo option dentro de <select></select> (no html) dinamicamente
                 item.text = `${n} x ${c} = ${n*c}`
-                item.value = `tab${c}`
-                tab.appendChild(item)//adiciona um elemento filho na variavel item (para gerar a proxima linha)
-              
+                item.value = `tab${c}`//saber qual foi o item que foi selecionado
+                tab.appendChild(item)//adiciona um elemento filho na variavel item       
         }
     }
 
