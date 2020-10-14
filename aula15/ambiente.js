@@ -1,7 +1,7 @@
 let num = [5, 8, 2, 9, 3]
 
-num.push(1)
-num.sort()
+num.push(1)//método interno - insere o indice de maneira automatica com o valor 1 (acrescenta valor ao array)
+num.sort() //método interno - coloca os elementos em ordem crescente
 console.log(num)
 console.log(`O vetor tem ${num.length} posições`)
 console.log(`O primeiro valor do vetor é ${num[0]}`)
@@ -18,6 +18,7 @@ if(pos == -1){
 }else{
 console.log(`O valor 8 esta na posição ${pos}`)
 }
+
 
 
 
