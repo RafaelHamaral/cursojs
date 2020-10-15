@@ -10,7 +10,7 @@ for(let valor = 0; valor < valores.length; valor ++){
 
 //simplificando o codigo com o IN 
 console.log('')
-console.log(`Utilizando o IN: `)
+console.log(`Utilizando o IN: `)//só funciona para arrays e objetos
 for(let valor in valores){
     console.log(`A posição ${valor} tem o valor ${valores[valor]}`)   
 }
