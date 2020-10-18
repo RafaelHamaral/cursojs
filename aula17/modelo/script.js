@@ -6,7 +6,7 @@
   let resp = document.querySelector('div#res')
   let valor = [] //array - sera utilizado para fazer a analise de dados
 
-  //criando as funções de validação de valores
+  //criando as funções de validação de valores 
   function isNumero(n){
     if(Number(n) >= 1 && Number(n) <= 100){
       return true
@@ -34,10 +34,17 @@ function adicionar(){
     }else {
         window.alert('Valor inválido ou já encontrado na lista')
     }
-    //limpa o campo e mantem o cursor no campo 
+    //limpa o campo e mantem o cursor no campo select
     add.value = '' 
     add.focus()
 } 
+
+//limpar a lista depois ou antes de finalizar e manter o cursor no campo select
+function limpar(){
+  resp.innerHTML = ''
+  lista.innerHTML = ''
+  add.focus()
+}
 
 function finalizar(){
   if(valor.length == 0){
@@ -62,7 +69,8 @@ function finalizar(){
     resp.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
     resp.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`
     resp.innerHTML += `<p>A soma dos valores informados é ${soma}.</p>`
-    resp.innerHTML += `<p>A média dos valores informados é ${media}.</p>`
+    resp.innerHTML += `<p>A média dos valores informados é ${media.toFixed(2)}.</p>`    
   }
 }
+
 
